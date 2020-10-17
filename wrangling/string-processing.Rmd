@@ -683,7 +683,7 @@ Our strategy will therefore be to search for a very specific pattern that assure
 
 Another powerful aspect of groups is that you can refer to the extracted values in a regex when searching and replacing. 
 
-The regex special character for the `i`-th group is `\\i`. So `\\1` is the value extracted from the first group, `\\2` the value from the second and so on. As a simple example, note that the following code will replace a comma with period, but only if it is between two digits:
+The regex special character for the `i`-th group is `\\i`. So `\\1` is the value extracted from the first group, `\\2` the value from the second and so on. As a simple example, note that the following code will replace a comma with single-inverted-comma (symbol for feet), but only if it is between two digits:
 
 ```{r}
 pattern_with_groups <-  "^([4-7]),(\\d*)$"
